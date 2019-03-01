@@ -9,8 +9,8 @@ exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.sass-ca
 gems:
   - jekyll-compass
 
-url: https://ice-ar.named-data.net
-baseurl:
+url: https://philoL.github.io/ndn-cri-websites/
+baseurl: git@github.com:philoL/ndn-cri-websites.git
 
 # Configuration for site
 title: Building the Core NDN Infrastructure to Advance Information-Centric Networking Research (NDN-CRI)
