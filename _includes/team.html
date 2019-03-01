@@ -1,0 +1,9 @@
+<section class="team">
+  <div class="section-content">
+    {% for person in include.people %}
+      <div class="col-md-6">
+        {% include person.html %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

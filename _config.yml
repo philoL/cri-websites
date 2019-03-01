@@ -1,0 +1,56 @@
+safe: false
+source: .
+destination: ./_site
+plugins_dir: ./_plugin
+highlighter: rouge
+markdown: kramdown
+exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.sass-cache']
+
+gems:
+  - jekyll-compass
+
+url: https://ice-ar.named-data.net
+baseurl:
+
+# Configuration for site
+title: Building the Core NDN Infrastructure to Advance Information-Centric Networking Research (NDN-CRI)
+logo_title: NDN-CRI Project
+author: NDN-CRI Project Team
+email:
+logo:
+
+navbar_list:
+- name: Home
+  link: /
+# - name: Meetings
+#   link: meetings.html
+- name: Activities
+  link: activities.html
+- name: Software
+  link: software.html
+- name: Testbed
+  link: testbed.html
+- name: Publications
+  link: pub.html
+- name: Team
+  link: team.html
+
+# google_analytics:
+#    account: UA-XXXXX-X
+
+# jekyll-scholar configurations
+scholar:
+  style: apa
+  locale: en
+  bibliography_template: pub
+
+  sort_by: year,month
+  order: descending
+
+  source: ./_publications
+  bibliography:
+    - pub.bib
+    - background.bib
+  details_dir: ./publications/details
+  details_layout: details.html
+  #query: "@*[public!=no]"

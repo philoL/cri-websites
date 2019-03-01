@@ -1,0 +1,18 @@
+<h3 class="widget-title">NEWS</h3>
+<ul data-role="listview" data-inset="true" data-theme="a" data-content-theme="a" class="datetbl">
+  {% for item in site.data.news %}
+  <li data-icon="false">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><p><b>{{ item.date }}</b></p></div>
+      <div class="ui-block-b">
+      	<p>{{ item.news }}
+      		{% if item.link != "" %}
+      			<a align="right" href= {{ item.link }}> read more</a>
+      		{% endif %}
+      	</p>
+      </div>
+      <!-- <div class="ui-block-c"><a href= {{ item.link }}> read more</a></div> -->
+    </div>
+  </li>
+  {% endfor %}
+</ul>

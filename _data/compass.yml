@@ -1,0 +1,11 @@
+---
+require:
+  - jekyll-compass
+
+sass_dir: _compass
+http_path: /
+css_dir: assets/css
+images_dir: /assets/img
+javascripts_dir: assets/js
+fonts_dir: assets/fonts
+relative_assets: True

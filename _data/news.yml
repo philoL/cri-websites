@@ -1,0 +1,21 @@
+- date: Feb 26, 2019
+  news: NDN Project has been accepted as an organization for GSoC 2019
+  link: "https://named-data.net/gsoc-2019/"
+
+- date: Feb 4, 2019
+  news: NFD v0.6.5, ndn-cxx v0.6.5, and ndn-tools v0.6.3 release
+  link: "https://named-data.net/doc/NFD/0.6.5/RELEASE_NOTES.html"
+
+- date: Jan 1, 2019
+  news: The first version of NDN IoT Package release
+  link: "https://github.com/named-data-iot/ndn-iot-package-over-nordic-sdk"
+
+- date: Nov 13, 2018
+  news: NDN seminar "Multipath Route Calculation Revisited" by Klaus Schneider (University of Arizona)
+  link: ""
+
+- date: Oct 20-21, 2018
+  news: The 7th NDN Hackathon, also the 1st remote hackathon, was held
+  link: "https://7th-ndn-hackathon.named-data.net/"
+
+

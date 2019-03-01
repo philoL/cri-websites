@@ -1,0 +1,17 @@
+<div class="team-member media">
+  <img src="{{ site.baseurl }}/assets/img/team/{{ person.photo }}" class="media-object img-circle pull-left" alt="" />
+  <div class="media-body">
+    <h3 class="media-heading team-name">{{ person.name }}</h3>
+    <strong>{{ person.title }}</strong>
+    <hr class="pull-left">
+    <div class="clearfix"></div>
+    <p>{{ person.info }}</p>
+    {% if person.links %}
+      <ul class="list-inline social-icon">
+        {% for link in person.links %}
+          <li><a href="{{ link.target }}">{{ link.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>

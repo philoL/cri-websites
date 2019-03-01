@@ -1,0 +1,58 @@
+---
+---
+
+<span id="{{ entry.key }}"> <div class="csl-block csl-content", style="line-height:150%">
+  <div class="csl-block csl-title">
+    {% if entry.url %}
+      <a href="{{ entry.url }}">
+    {% endif %}
+    <b>{{ entry.title }}</b>. {% if entry.status %} (<i>{{ entry.status }}</i>) {% endif %}
+    {% if entry.url %}
+      </a>
+    {% endif %}
+  </div>
+  <div class="csl-block csl-author"><i>by </i>{{ entry.author }}.</div>
+  <div class="csl-block csl-event">
+    {% if entry.type == "techreport" or entry.type == "Tech. Report" %}
+      Technical Report {{ entry.number }}, 
+    {% endif %}
+    {% if entry.booktitle %} In <i>{{ entry.booktitle }}</i>, {% endif %}
+    {% if entry.journal %} In <i>{{ entry.journal }}</i>, {% endif %}
+    {% if entry.pages %} pp. {{ entry.pages }}, {% endif %}
+    {% if entry.month %} {{ entry.month }}, {% endif %}
+    {{ entry.year }}.
+  </div>
+
+  {% comment %}
+  {% if entry.category contains "dis" %}
+  {% else %}
+    <button class="button0" onclick="toggleBibtex{{ entry.key}}()">Bibtex</button>
+  {% endif %}
+  
+  {% if entry.doi %}
+  <a href="{{ entry.doi | prepend: 'http://doi.org/' }}">DOI</a>
+  {% endif %}
+  
+  {% if entry.preprint %}
+  <a href="{{ entry.preprint }}">Preprint</a>
+  {% endif %}
+  {% endcomment %}
+  
+</div></span>
+
+{% comment %}
+<div id="a{{ entry.key }}" style="display: none;">
+<pre>{{ entry.bibtex }}</pre>
+</div>
+
+<script>
+function toggleBibtex{{entry.key}}(parameter) {
+    var x= document.getElementById('a{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+{% endcomment %}
