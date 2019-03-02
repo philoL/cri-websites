@@ -10,7 +10,7 @@ gems:
   - jekyll-compass
 
 url: https://philoL.github.io/ndn-cri-websites/
-baseurl: git@github.com:philoL/ndn-cri-websites.git
+baseurl: https://philoL.github.io/ndn-cri-websites/
 
 # Configuration for site
 title: Building the Core NDN Infrastructure to Advance Information-Centric Networking Research (NDN-CRI)
